@@ -1,0 +1,225 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Montserrat:wght@400;500;700&family=Roboto:wght@700;900&display=swap');
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, hsl(224, 73%, 10%), hsl(261, 53%, 16%) ) ;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #f5f6fa;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.socials {
+  position: absolute;
+  padding-top: 3rem ;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: .3rem solid rgb(255, 136, 0);
+  width: 70%;
+  padding-bottom: 1rem;
+}
+
+.socials img {
+  width: 2.5rem;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  color: #f5f6fa;
+  display: flex;
+  gap: 1rem;
+}
+
+.orange {
+  height: 52.5rem;
+  background-color: rgb(255, 136, 0);
+  width: 27rem;
+  position: absolute;
+  top: 0;
+  left: 14rem;
+  border-left: 1rem solid #ccc;
+  border-bottom: 1rem solid #ccc;
+  border-right: 1rem solid #ccc;
+  animation: drop 1s ease-out both;
+
+}
+
+.hero-img {
+  position: relative;
+
+}
+.hero-img img {
+  width: 32rem;
+  padding-top: 15rem;
+  position: absolute;
+  left: 8rem;
+  z-index: 10;
+  animation: scale 2s  ease-in   forwards;
+ 
+}
+
+.hero-text {
+  width: 55.5%;
+  margin-top: 20rem;
+}
+
+h1 {
+  font-size: 8rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  line-height: 7rem;
+}
+
+#name{
+  font-family: 'Merriweather', sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: rgb(103, 177, 252);
+  margin-bottom: 2rem;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  line-height: 2rem;
+  color: #f5f6fa;
+
+}
+
+.skills {
+  margin-top: 15rem;
+}
+.skills p {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.skills h2 {
+  padding-top: 1rem;
+  border-top: .3rem solid rgb(255, 136, 0);
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'roboto', sans-serif;
+  color: #f5f6fa;
+  margin-bottom: 2rem;
+  letter-spacing: .5rem;
+}
+
+.logos {
+  height:15rem ;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+  gap: 4rem;
+  position: relative;
+}
+
+.html {
+  position: absolute;
+  animation: slides 7s 8s linear infinite  both;
+}
+
+.css {
+  position: absolute;
+  animation: slides 7s 2.5s linear infinite  both;
+
+}
+
+.scss {
+  position: absolute;
+  animation: slides 7s 4s linear infinite  both;
+
+}
+
+.js {
+  position: absolute;
+  animation: slides 7s 5.5s linear infinite  both;
+
+}
+
+@keyframes slides {
+
+ 0%{
+  opacity: 0;
+ }
+
+ 10%{
+    opacity: 1;
+ }
+
+ 85%{
+opacity: 1;
+}
+
+100%{
+  transform: translateX(-86rem);
+  opacity: 0;
+ }
+}
+
+@keyframes scale {
+  0%{
+    opacity: 0;
+    transform: translateX(12rem);
+    backface-visibility: hidden;
+   }
+   50% {
+    opacity: 0;
+   }
+  
+  
+   90%{
+  opacity: 1;
+  }
+  
+  100%{
+    opacity: 1;
+    transform: translate(0);
+    backface-visibility: visible;
+
+   }
+}
+
+@keyframes drop {
+  0%{
+    height: 0;
+   }
+   50% {
+   }
+  
+  
+   90%{
+  }
+  
+  100%{
+  height: 52.5rem;
+   }
+}
+
+.logos img {
+  width: 9.5rem;
+  height: 9rem;
+}
